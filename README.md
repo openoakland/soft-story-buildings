@@ -9,6 +9,12 @@ A simple way for people to view information on the status of "soft-story" buildi
 ### Status
 - 2/11/14: Interested folks (myself [@daguar], @kleinlieu and @spjika) met with the Director of Planning and Building last Friday, and she agreed to get us the City's data on soft-story buildings. (City staff have also followed up saying they're working on the records request.)
 
+### Data
+
+The City has responded to my records request with data!!! See here:
+
+http://records.oaklandnet.com/request/2281
+
 ### Description
 The [Association of Bay Area Governments](http://quake.abag.ca.gov/projects/oakland-soft-story/) identified 1,379 "soft-story" buildings in Oakland that are the highest-risk for causing injuries or worse in a large earthquake. The City of Oakland then passed an ordinance requiring properties' owners submit a "screening" of these buildings with basic facts that can inform a risk assessment for each building. Among the biggest factors are slope and having parking/empty space underneath the building.
 
