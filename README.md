@@ -7,7 +7,7 @@ Helping Oakland residents understand their buildings' earthquake risks
 A simple way for people to view information on the status of "soft-story" buildings in Oakland.
 
 ### Status
-- 2/12/14 (part 2): We have data (see below) -- BUT because it's _exactly_ 1,000 buildings, @maxogden pointed out it's probably an incomplete dump ([see issue here](https://github.com/openoakland/soft-story-buildings/issues/6)). Still starting to spec out project tasks over on [the Issues page](https://github.com/openoakland/soft-story-buildings/issues).
+- 2/17/14: We have data (see below) representing the 1,000 buildings whose owners submitted screenings. We're still waiting on the full original list (1,379 properties) from ABAG. Right now, the next steps are to do some basic analysis and design around what a tool looks like for this data.
 
 ### Getting Involved
 
