@@ -1,7 +1,7 @@
 requires the [spreadsheet](https://github.com/zdavatz/spreadsheet) gem
 
 ```sh
-ruby story_convert.rb file.xls > output.json
+ruby convert.rb file.xls > output.json
 ```
 
 #### data structure
