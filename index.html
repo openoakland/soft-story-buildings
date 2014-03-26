@@ -11,9 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/base.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -22,28 +22,30 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="main_content">
-            <div class="intro">
-                <h1>The hard truth on soft story buildings</h1>
-                <h2>What is a "soft story building?"</h2>
-                <p>A soft story building is an apartment building of three or more stories located over a ground level with large openings, such as a parking garage or series of retail businesses with large windows.</p>
-            </div>
-            <div class="supporting_data">
-                <h2>Why should I care?</h2>
-                    <p>There are currently about 1,000 addresses in Oakland (about XXXXX percent of the population) are classified as soft story buildings.</p>
-            </div>
-            <div class="action_area">
-                <h2>Am I affected?</h2>
-                <p>Enter your address to find out.</p>
-                <div id="address_lookup">
-                  <input class="typeahead" type="text" placeholder="Ex. 412 Beachfront Ave.">
+        <div class="container">
+            <div class="main_content twelve columns alpha">
+                <div class="intro">
+                    <h1>The hard truth on soft story buildings</h1>
+                    <h2>What is a "soft story building?"</h2>
+                    <p>A soft story building is an apartment building of three or more stories located over a ground level with large openings, such as a parking garage or series of retail businesses with large windows.</p>
+                </div>
+                <div class="supporting_data">
+                    <h2>Why should I care?</h2>
+                        <p>There are currently about 1,000 addresses in Oakland (about XXXXX percent of the population) are classified as soft story buildings.</p>
+                </div>
+                <div class="action_area">
+                    <h2>Am I affected?</h2>
+                    <p>Enter your address to find out.</p>
+                    <div id="address_lookup">
+                      <input class="typeahead" type="text" placeholder="Ex. 412 Beachfront Ave.">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="supporting_content">
-            <div class="soft_story_images">
-                <img src="/img/dingbat_maryjane.jpg" width="18%" alt="soft story building - before"/>
-                <img src="/img/lomaprieta-marina.jpeg" width="20%" alt="soft story building - after"/>
+            <div class="supporting_content four columns omega">
+                <div class="soft_story_images">
+                    <img src="/img/dingbat_maryjane.jpg" width="90%" alt="soft story building - before"/>
+                    <img src="/img/lomaprieta-marina.jpeg" width="90%" alt="soft story building - after"/>
+                </div>
             </div>
         </div>
 
