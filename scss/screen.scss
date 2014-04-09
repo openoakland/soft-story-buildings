@@ -5,10 +5,22 @@
 
 /*@import "compass/reset";*/
 
+$dark-grey: #444;
+$medium-grey: #666;
+
 img {
-	padding: 5%;
+	padding: 2%;
 }
 
 .container {
 	padding-top: 2%;
+}
+
+h1 {
+	color: $dark-grey;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: $medium-grey;
 }
