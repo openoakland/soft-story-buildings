@@ -1,6 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'> 
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,300italic' rel='stylesheet' type='text/css'> 
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation</title>
@@ -13,7 +17,7 @@
     <nav class="top-bar" data-topbar>
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#">title goes here</a></h1>
+          <h1><a href="#">Oakland Soft Story Buildings</a></h1>
         </li>
         <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
       </ul>
@@ -30,9 +34,9 @@
 
     <div class="container">
         <div class="row intro-banner">
-            <div class="large-12 columns intro-area panel">
-                <h1>Soft story buildings</h1>
-                <p class="intro-explanation">Is your home vulnerable in an earthquake?</p>
+            <div class="large-12 columns intro-area">
+                <h1 class="header">Oakland "Soft Story" Buildings</h1>
+                <h1 class="subheader">Is your home vulnerable in an earthquake?</h1>
 
                 <p class="intro-explanation">Over a thousand residential structures in Oakland have been designated soft-story buildings. Soft-story buildings are buildings with unsupported first floors, including garages, or commercial establishments with many large windows.</p>
 
@@ -51,17 +55,18 @@
             <div class="large-8 columns">
                 <div class="what">
                     <h2>What is a "soft story building?"</h2>
-                    <p class="what-explanation">A soft story building is an apartment building of three or more stories located over a ground level with large openings, such as a parking garage or series of retail businesses with large windows. <a class="text-ref" href="http://www2.oaklandnet.com/Government/o/PBN/OurOrganization/BuildingServices/o/Permits/DOWD008964"> Learn more...</a></p>
+                    <p class="what-explanation">A soft story building is an apartment building of three or more stories located over a ground level with large openings, such as a parking garage or series of retail businesses with large windows.</p>
+                    <p><a class="text-ref" href="http://www2.oaklandnet.com/Government/o/PBN/OurOrganization/BuildingServices/o/Permits/DOWD008964"> Learn more...</a></p>
                 </div>
                 <div class="supporting_data">
                     <h2>Why should I care?</h2>
-                    <p class="what-explanation">Soft story buildings are vulnerable to collapse in a moderate to severe earthquake. Per a <a href="http://quake.abag.ca.gov/wp-content/documents/OaklandSoftStoryReport_061113.pdf">survey conducted by the Association of Bay Area Governments</a>, there are currently about 1,000 addresses in Oakland are classified as soft story buildings.  These effect roughly 1 in every 10 rental units.</p>
+                    <p class="why-explanation">Soft story buildings are vulnerable to collapse in a moderate to severe earthquake. Per a <a href="http://quake.abag.ca.gov/wp-content/documents/OaklandSoftStoryReport_061113.pdf">survey conducted by the Association of Bay Area Governments</a>, there are currently about 1,000 addresses in Oakland are classified as soft story buildings.  These effect roughly 1 in every 10 rental units.</p>
                 </div>
                 <div class="action_area">
                     <h2>Am I affected?</h2>
-                    <div id="address_lookup">
+                    <div class="address-form">
                       <label>Enter your address to find out.</label>
-                      <input class="typeahead" type="text" placeholder="Ex. 412 Beachfront Ave.">
+                      <input id="address_lookup" class="typeahead radius" type="text" placeholder="Ex. 412 Beachfront Ave.">
                     </div>
                 </div>
             </div>
