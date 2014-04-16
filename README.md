@@ -11,6 +11,17 @@ A simple way for people to view information on the status of "soft-story" buildi
 
 The next big step is to do some design and minimal prototyping for a "proof of concept" what a basic search and educational tool would look like, and start to map out possible points of continued engagement (e-mail list? info to contact someone?)
 
+### Local Setup
+
+To get the alpha version of the web site running locally, do the following:
+
+- Clone the repo and `cd` into the directory
+- Install Bower if you don't already have it: `npm install -g bower`
+- Run `bower install`
+- Run `compass watch`
+- Run `python -m SimpleHTTPServer` to serve up the site
+- Visit [http://localhost:8000/](http://localhost:8000/) where the site will be!
+
 ### Getting Involved
 
 If you're interested in this project, a few ways to get involved are:
