@@ -29,11 +29,9 @@ class Converter
 	# row: Spreadsheet::Excel::Row
 	def extract_row(row)
 		return [
-			"#{row[0].to_i} #{row[1]}", # Property address
-			row[3],                     # Mailing address
-			row[4],                     # City & State
-			row[5].to_i,                # Postal Code
-			row[8]                      # Category
+			"#{row[0].to_i} #{Converter.titleize(row[1])}, #{Converter.titleize(row[4])}", # Property address
+			row[5].to_i, # Postal Code
+			row[8] # Category
 		]
 	end
 
@@ -41,6 +39,10 @@ class Converter
 	# sheet: Spreadsheet::Excel::Worksheet
 	def parse_rows(sheet)
 		JSON.generate({:keys => Keys, :rows => sheet.drop(5).map{|r| extract_row(r)}})
+	end
+
+	def self.titleize(str)
+		str.nil? ? '' : str.gsub(/\w+/, &:capitalize)
 	end
 
 end
