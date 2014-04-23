@@ -24,7 +24,7 @@ function initTypeahead(json) {
     source: substringMatcher(json.rows)
   })
   .on('typeahead:selected', function($e, sugg) {
-    $details_el.fadeIn()
+    $details_el.hide().fadeIn()
     $details_el.find('.addr').text(sugg[0])
     $details_el.find(".status span").hide()
     $details_el.find('.status span[data-status="' + sugg[1] + '"]').show()
