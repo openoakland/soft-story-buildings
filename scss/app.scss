@@ -2,7 +2,9 @@
 @import "foundation";
 
 .twitter-typeahead { width: 100%; }
+.tt-suggestions { background-color: #fff; }
 
+.status span { display: none; }
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",

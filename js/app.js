@@ -2,6 +2,8 @@
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
 
+var $details_el = $('#address_detail');
+
 var substringMatcher = function(data) {
   return function(q, cb) {
     // regex used to determine if a string contains the substring `q`
@@ -20,5 +22,12 @@ function initTypeahead(json) {
     name: 'states',
     displayKey: function(row) {return row[0]},
     source: substringMatcher(json.rows)
-  });
+  })
+  .on('typeahead:selected', function($e, sugg) {
+    $details_el.fadeIn()
+    $details_el.find('.addr').text(sugg[0])
+    $details_el.find(".status span").hide()
+    $details_el.find('.status span[data-status="' + sugg[1] + '"]').show()
+    $details_el.find('.date').text(sugg[2] ? sugg[2] : 'Unknown')
+  })
 };
