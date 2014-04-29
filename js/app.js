@@ -18,7 +18,7 @@ var substringMatcher = function(data) {
 $.get('/data/all.json', initTypeahead);
 
 function initTypeahead(json) {
-  $('#address_lookup .typeahead').typeahead({}, {
+  $('#address_lookup').typeahead({}, {
     name: 'states',
     displayKey: function(row) {return row[0]},
     source: substringMatcher(json.rows)
