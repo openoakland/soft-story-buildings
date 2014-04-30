@@ -9,7 +9,7 @@ require 'date'
 
 class Converter
 
-  Keys = ['Property Address', 'Mailing Address', 'City & State', 'Postal Code', 'Category']
+  Keys = ['Property Address', 'Notified?', 'Status']
 
   # args: Array
   def initialize(args)
@@ -29,11 +29,7 @@ class Converter
   # Take an xls row and prune into a plain array
   # row: Spreadsheet::Excel::Row
   def extract_row(row)
-    return [
-      Converter.format_address(row),
-      row[8], # Status/Category
-      Converter.format_date(row[6]) # Date
-    ]
+    return [Converter.extract_address(row), row[3], row[4]]
   end
 
   # Generate JSON from the Spreadsheet
@@ -42,18 +38,11 @@ class Converter
     JSON.generate({:keys => Keys, :rows => sheet.drop(5).map{|r| extract_row(r)}})
   end
 
-  def self.format_address(row)
+  # Extract the property address
+  def self.extract_address(row)
     # row[0] - property address number
-    # row[1] - property address street
-    # row[4] - city and state
-    # row[5] - zip
-    "#{row[0].to_i} #{Converter.titleize(row[1])}, #{Converter.titleize(row[4])} #{row[5].to_i}"
-  end
-
-  def self.format_date(d)
-    return 'Unknown' if d.nil?
-    return 'Not notified yet' if d == 'NOTIFY'
-    return d.strftime('%m/%d/%y') if d.is_a?(Date)
+    # row[1] - property street name
+    "#{row[0].to_i} #{Converter.titleize(row[1])}, Oakland, CA"
   end
 
   def self.titleize(str)

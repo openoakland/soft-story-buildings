@@ -26,8 +26,7 @@ function initTypeahead(json) {
   .on('typeahead:selected', function($e, sugg) {
     $details_el.hide().fadeIn()
     $details_el.find('.addr').text(sugg[0])
-    $details_el.find(".status span").hide()
-    $details_el.find('.status span[data-status="' + sugg[1] + '"]').show()
-    $details_el.find('.date').text(sugg[2] ? sugg[2] : 'Unknown')
+    $details_el.find('.notified').text(sugg[1])
+    $details_el.find('.status').text(sugg[2])
   })
 };
