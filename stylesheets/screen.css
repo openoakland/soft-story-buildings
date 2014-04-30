@@ -1,0 +1,138 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*@import "compass/reset";*/
+/* colors */
+/*$red: #fd3f2f;*/
+/* fonts */
+/* general web page */
+/* line 25, ../scss/screen.scss */
+.container {
+  background-color: #f14835;
+}
+
+/* line 29, ../scss/screen.scss */
+a {
+  color: #bbb;
+}
+
+/* line 33, ../scss/screen.scss */
+a:hover {
+  color: white;
+}
+
+/* line 37, ../scss/screen.scss */
+img {
+  padding: 2%;
+}
+
+/* line 41, ../scss/screen.scss */
+.container {
+  padding-top: 1%;
+  padding-bottom: 10%;
+}
+
+/* line 46, ../scss/screen.scss */
+h1.header {
+  color: white;
+  text-shadow: -3px 3px 0px #c93225;
+  font-family: 'Exo', sans-serif;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+/* line 54, ../scss/screen.scss */
+h1.subheader {
+  color: white;
+  font-family: 'Exo', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 2%;
+  padding-left: 0.5%;
+}
+
+/* line 63, ../scss/screen.scss */
+h2 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* line 68, ../scss/screen.scss */
+h1.subheader {
+  font-size: 1.5rem;
+}
+
+/* line 72, ../scss/screen.scss */
+.text-ref {
+  font-size: 0.8rem;
+  padding-left: 1%;
+}
+
+/* line 77, ../scss/screen.scss */
+.intro-area {
+  padding-bottom: 2%;
+  padding-top: 2%;
+}
+
+/* line 82, ../scss/screen.scss */
+p.intro-explanation {
+  color: white;
+  margin-bottom: 0.5rem;
+  padding-left: 1%;
+}
+
+/* line 88, ../scss/screen.scss */
+p.what-explanation {
+  color: #f7f7f7;
+  padding-left: 1%;
+  margin-bottom: 0.5%;
+}
+
+/* line 94, ../scss/screen.scss */
+p.why-explanation {
+  color: #f7f7f7;
+  padding-left: 1%;
+}
+
+/* line 99, ../scss/screen.scss */
+label {
+  color: #f7f7f7;
+}
+
+/* line 103, ../scss/screen.scss */
+.address-form {
+  padding-left: 1%;
+}
+
+/* top bar */
+/* line 108, ../scss/screen.scss */
+.top-bar {
+  background: #fbf7e4;
+  font-family: 'Exo', sans-serif;
+  font-weight: 300;
+}
+
+/* line 114, ../scss/screen.scss */
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #fbf7e4;
+  color: #f14835;
+}
+
+/* line 119, ../scss/screen.scss */
+.top-bar-section:hover li:not(.has-form) a:not(.button) {
+  background: #f14835;
+}
+
+/* line 123, ../scss/screen.scss */
+.top-bar .name h1 a {
+  color: #f14835;
+  font-family: 'Exo', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* line 130, ../scss/screen.scss */
+.top-bar .toggle-topbar.menu-icon a {
+  color: #f14835;
+}
