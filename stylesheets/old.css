@@ -1,0 +1,104 @@
+/* line 1, ../scss/old.scss */
+body {
+  background-color: #f8f8f8;
+  background-image: url("/img/bg-pattern.png");
+}
+
+/* line 6, ../scss/old.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans', 'Helvetica', 'sans-serif';
+  font-weight: 700;
+}
+
+/* line 11, ../scss/old.scss */
+p {
+  color: #444;
+}
+
+/* line 15, ../scss/old.scss */
+input.typeahead.tt-input {
+  margin-bottom: 0;
+}
+
+/* line 16, ../scss/old.scss */
+.twitter-typeahead {
+  width: 100%;
+}
+
+/* line 17, ../scss/old.scss */
+.tt-dropdown-menu {
+  width: 100%;
+}
+
+/* line 20, ../scss/old.scss */
+.tt-suggestions {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 26, ../scss/old.scss */
+.tt-suggestion.tt-cursor {
+  background-color: #eee;
+}
+
+/* line 29, ../scss/old.scss */
+.tt-suggestion p {
+  margin-bottom: 0;
+}
+
+/* line 33, ../scss/old.scss */
+.container {
+  padding-top: 20px;
+}
+/* line 36, ../scss/old.scss */
+.container h1 {
+  color: #555;
+  font-size: 52px;
+  text-align: center;
+}
+/* line 42, ../scss/old.scss */
+.container h2:first-child {
+  margin-top: -10px;
+}
+/* line 44, ../scss/old.scss */
+.container h2 {
+  font-size: 32px;
+  color: #888;
+}
+/* line 49, ../scss/old.scss */
+.container .header {
+  margin-bottom: 20px;
+}
+
+/* line 55, ../scss/old.scss */
+.soft_story_images img {
+  border: 1px solid #ddd;
+  width: 100%;
+}
+/* line 59, ../scss/old.scss */
+.soft_story_images img:first-child {
+  margin-bottom: 45px;
+}
+
+/* line 64, ../scss/old.scss */
+#address_detail {
+  margin-top: 20px;
+  overflow: auto;
+}
+/* line 68, ../scss/old.scss */
+#address_detail dt {
+  width: 150px;
+  clear: left;
+  color: #444;
+}
+/* line 74, ../scss/old.scss */
+#address_detail dd {
+  max-width: 400px;
+}
+/* line 78, ../scss/old.scss */
+#address_detail dd, #address_detail dt {
+  display: block;
+  float: left;
+}

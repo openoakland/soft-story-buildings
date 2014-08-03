@@ -1,0 +1,109 @@
+/* line 4, ../scss/app.scss */
+body {
+  background-color: #f8f8f8;
+  background-image: url("/img/bg-pattern.png");
+}
+
+/* line 9, ../scss/app.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Sans', 'Helvetica', 'sans-serif';
+  font-weight: 700;
+}
+
+/* line 14, ../scss/app.scss */
+p {
+  color: #444;
+}
+
+/* line 18, ../scss/app.scss */
+input.typeahead.tt-input {
+  margin-bottom: 0;
+}
+
+/* line 19, ../scss/app.scss */
+.twitter-typeahead {
+  width: 100%;
+}
+
+/* line 20, ../scss/app.scss */
+.tt-dropdown-menu {
+  width: 100%;
+}
+
+/* line 23, ../scss/app.scss */
+.tt-suggestions {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 0;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* line 29, ../scss/app.scss */
+.tt-suggestion.tt-cursor {
+  background-color: #eee;
+}
+
+/* line 32, ../scss/app.scss */
+.tt-suggestion p {
+  margin-bottom: 0;
+}
+
+/* line 36, ../scss/app.scss */
+.container {
+  padding-top: 20px;
+}
+/* line 39, ../scss/app.scss */
+.container h1 {
+  color: #555;
+  font-size: 52px;
+  text-align: center;
+}
+/* line 45, ../scss/app.scss */
+.container h2:first-child {
+  margin-top: -10px;
+}
+/* line 47, ../scss/app.scss */
+.container h2 {
+  font-size: 32px;
+  color: #888;
+}
+/* line 52, ../scss/app.scss */
+.container .header {
+  margin-bottom: 20px;
+}
+
+/* line 58, ../scss/app.scss */
+.soft_story_images img {
+  border: 1px solid #ddd;
+  width: 100%;
+}
+/* line 62, ../scss/app.scss */
+.soft_story_images img:first-child {
+  margin-bottom: 45px;
+}
+
+/* line 67, ../scss/app.scss */
+#address_detail {
+  margin-top: 20px;
+  overflow: auto;
+}
+/* line 71, ../scss/app.scss */
+#address_detail dt {
+  width: 150px;
+  clear: left;
+  color: #444;
+}
+/* line 77, ../scss/app.scss */
+#address_detail dd {
+  max-width: 400px;
+}
+/* line 81, ../scss/app.scss */
+#address_detail dd, #address_detail dt {
+  display: block;
+  float: left;
+}
+
+/* line 87, ../scss/app.scss */
+.status span {
+  display: none;
+}
