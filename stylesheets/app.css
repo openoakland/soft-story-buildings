@@ -7791,7 +7791,11 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
+<<<<<<< HEAD
 /* line 5, ../scss/app.scss */
+=======
+/* line 4, ../scss/app.scss */
+>>>>>>> 52c6368e86b717b2e0dececdcfec58836b30d23b
 .status span {
   display: none;
 }
