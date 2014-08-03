@@ -15,7 +15,7 @@ var substringMatcher = function(data) {
   };
 };
 
-$.get('/data/all.json', initTypeahead);
+$.get('data/all.json', initTypeahead);
 
 function initTypeahead(json) {
   $('#address_lookup').typeahead({}, {
