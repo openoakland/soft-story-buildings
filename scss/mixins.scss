@@ -1,0 +1,18 @@
+@mixin border-box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin columns($amount) {
+	@include border-box;
+	width: $amount * 8.33333333333%;
+	clear: left;
+	float: left;
+}
+
+@mixin columns-right($amount) {
+	@include columns($amount);
+	clear: right;
+	float: right;
+}

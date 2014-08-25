@@ -1,94 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
-  <head>
-    <!-- fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'> 
-    <link href='http://fonts.googleapis.com/css?family=Exo:400,300italic' rel='stylesheet' type='text/css'> 
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soft Story Buildings</title>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <!-- <link rel="stylesheet" href="stylesheets/foundation-icons.css" /> -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
-    <nav class="top-bar" data-topbar>
-      <ul class="title-area">
-        <li class="name">
-          <h1><a href="#">Oakland Soft Story Buildings</a></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-      </ul>
 
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li>
-            <a href="#">About</a>
-          </li>
-        </ul>
-      </section>
-    </nav>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <div class="container">
-        <div class="row intro-banner">
-            <div class="large-12 columns intro-area">
-              <h1 class="header">Oakland "Soft Story" Buildings</h1>
-              <h1 class="subheader">Is your home vulnerable in an earthquake?</h1>
+  <script src="bower_components/modernizr/modernizr.js"></script>
 
-              <p class="intro-explanation">Over a thousand residential structures in Oakland have been designated potential soft-story buildings. Soft-story buildings are buildings with unsupported first floors, including garages, or commercial establishments with many large windows.</p>
+  <!-- fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!--
+  <link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'> 
+  <link href='http://fonts.googleapis.com/css?family=Exo:400,300italic' rel='stylesheet' type='text/css'> 
+  -->
+  <!-- end fonts -->
+<link rel="stylesheet" href="stylesheets/app.css" type="text/css" />
+  <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen, projection" />
 
-              <p class="intro-explanation">Do you live in one of these buildings? Enter your address below to find out.</p>
-            </div>
+  <title>Soft Story Buildings</title>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <h1>Oakland "Soft Story" Buildings</h1>
+    </header>
+
+    <section class='images'>
+      <img src="img/Dingbat_MaryJane.jpg" width="90%" alt="soft story building - before"/>
+      <img src="img/LomaPrieta-Marina.jpeg" width="90%" alt="soft story building - after"/>
+    </section>
+
+    <section class='explanation'>
+      <h2>Is your home vulnerable during an earthquake?</h2>
+
+      <p>Over a thousand residential structures in Oakland have been designated potential soft-story buildings. Soft-story buildings are buildings with unsupported first floors, including garages, or commercial establishments with many large windows.</p>
+
+      <p>Do you live in one of these buildings? Enter your address below to find out.</p>
+
+      <h3>What is a "soft story building?"</h3>
+
+      <p>A soft story building is an apartment building of three or more stories located over a ground level with large openings, such as a parking garage or series of retail businesses with large windows.</p>
+
+      <p><a class="text-ref" target='_blank' href="http://www2.oaklandnet.com/Government/o/PBN/OurOrganization/BuildingServices/o/Permits/DOWD008964"> Learn more...</a></p>
+
+      <h3>Why should I care?</h3>
+
+      <p class="why-explanation">Soft story buildings are vulnerable to collapse in a moderate to severe earthquake. Per a <a target='_blank' href="http://quake.abag.ca.gov/wp-content/documents/OaklandSoftStoryReport_061113.pdf">survey conducted by the Association of Bay Area Governments</a>, there are currently about 1,000 addresses in Oakland are classified as soft story buildings.  These effect roughly <strong>1 in every 10</strong> rental units.</p>
+
+    </section>
+
+    <section class='find'>
+      <h2>Am I Affected?</h2>
+
+      <form>
+        <div class="address-form">
+          <label>Enter your address to find out.</label>
+          <div class='input'>
+            <i class='fa fa-map-marker'></i> <input id="address_lookup" class="typeahead radius" type="text" placeholder="Ex. 412 Beachfront Ave.">
+          </div>
         </div>
-        <div class="row">
-            <div class="large-7 columns">
-                <div class="what">
-                    <h2>What is a "soft story building?"</h2>
-                    <p class="what-explanation">A soft story building is an apartment building of three or more stories located over a ground level with large openings, such as a parking garage or series of retail businesses with large windows.</p>
-                    <p><a class="text-ref" href="http://www2.oaklandnet.com/Government/o/PBN/OurOrganization/BuildingServices/o/Permits/DOWD008964"> Learn more...</a></p>
-                </div>
-                <div class="supporting_data">
-                    <h2>Why should I care?</h2>
-                    <p class="why-explanation">Soft story buildings are vulnerable to collapse in a moderate to severe earthquake. Per a <a href="http://quake.abag.ca.gov/wp-content/documents/OaklandSoftStoryReport_061113.pdf">survey conducted by the Association of Bay Area Governments</a>, there are currently about 1,000 addresses in Oakland are classified as soft story buildings.  These effect roughly 1 in every 10 rental units.</p>
-                </div>
-                <div class="action_area">
-                    <h2>Am I affected?</h2>
-                    <div class="address-form">
-                      <label>Enter your address to find out.</label>
-                      <input id="address_lookup" class="typeahead radius" type="text" placeholder="Ex. 412 Beachfront Ave.">
-                    </div>
 
-                    <dl id="address_detail" class='hide'>
-                      <dt>Address</dt> <dd class='addr'></dd>
-                      <dt>Status</dt> <dd class='status'></dd>
-                      <dt>Notified?</dt> <dd class='notified'></dd>
-                    </dl>
+        <dl id="address_detail">
+          <dt>Address</dt> <dd class='addr'></dd>
+          <dt>Status</dt> <dd class='status'></dd>
+          <dt>Notified?</dt> <dd class='notified'></dd>
+        </dl>
+      </form>
 
-                </div>
-            </div>
-            <div class="large-5 columns">
-                <div class="supporting_content">
-                    <div class="soft_story_images">
-                        <img src="img/Dingbat_MaryJane.jpg" width="90%" alt="soft story building - before"/>
-                        <img src="img/LomaPrieta-Marina.jpeg" width="90%" alt="soft story building - after"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>            
+      <div class='map'>
+        <div id="gmap_canvas"></div>
+      </div>
+    </section>
 
-    <!-- foundational js -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <footer>
+      <h2>About This Project</h2>
+      <p>Lorem ipsum dolor sit amet</p>
+    </footer>
 
-    <!-- custom js and components -->
-    <script src="js/typeahead.bundle.js"></script>
-    <script src="js/app.js"></script>
+  </main>
 
-  </body>
+<!-- 
+  <div class="container">
+    <div class="row intro-banner">
+      <div class="large-12 columns intro-area">
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-7 columns">
+        <div class="what">
+      </div>
+  -->
+
+  <!-- foundational js -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+
+  <!-- google maps -->
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+  <!-- custom js and components -->
+  <script src="js/typeahead.bundle.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
 </html>
