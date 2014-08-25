@@ -45,4 +45,7 @@ function initMap() {
   })
 }
 
+function initMarkers(markers) {
+}
+
 initMap()
