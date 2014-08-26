@@ -15,7 +15,7 @@ Geocoder.configure({
 
 class Converter
 
-  Keys = ['Property Address', 'Notified?', 'Status']
+  Keys = ['Property Address', 'Notified?', 'Status', 'Lat', 'Lng']
 
   # args: Array
   def initialize(args)
