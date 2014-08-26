@@ -15,3 +15,5 @@ ruby convert.rb file.xls > output.json
 	]
 }
 ```
+
+Note: this json is saved as an array of arrays rather than an array of objects, simply to save memory space.

@@ -4,11 +4,14 @@ $(document).foundation();
 
 var $details_el = $('#address_detail');
 
-function renderDetails(data) {
+function renderDetails(row) {
+  var addr = row[0]
+  var notified = row[1]
+  var status = row[2]
   $details_el.hide().fadeIn()
-  $details_el.find('.addr').text(data.addr)
-  $details_el.find('.notified').text(data.notified)
-  $details_el.find('.status').text(data.status)
+  $details_el.find('.addr').text(addr)
+  $details_el.find('.notified').text(notified)
+  $details_el.find('.status').text(status)
 }
 
 function substringMatcher(data) {
@@ -25,27 +28,50 @@ function substringMatcher(data) {
 $.get('data/all.json', initTypeahead);
 
 function initTypeahead(json) {
+  var googleMap = initMap()
   $('#address_lookup').typeahead({}, {
     name: 'states',
     displayKey: function(row) {return row[0]},
     source: substringMatcher(json.rows)
   })
-  .on('typeahead:selected', function($e, sugg) {
-    renderDetails({addr: sugg[0], notified: sugg[1], status: sugg[2]})
+  .on('typeahead:selected', function($e, row) {
+    renderDetails(row)
+    var latlng = new google.maps.LatLng(Number(row[4]), Number(row[3]))
+    googleMap.setCenter(latlng)
   })
+  initMarkers(json, googleMap)
 }
 
 function initMap() { 
   var lat = 37.8043637
   var lng = -122.2711137
   var map = new google.maps.Map(document.getElementById("gmap_canvas"), {
-    zoom: 12,
+    zoom: 16,
     center: new google.maps.LatLng(lat, lng),
     mapTypeId: google.maps.MapTypeId.ROADMAP
   })
+
+  return map
 }
 
-function initMarkers(markers) {
-}
+function initMarkers(json, map) {
+  for(var i = 0; i < json.rows.length; ++i) {
+    var row = json.rows[i]
+    var latlng = new google.maps.LatLng(Number(row[4]), Number(row[3]))
 
-initMap()
+    var marker = new google.maps.Marker({
+      position: latlng,
+      map: map,
+      title: row[0],
+      content: row.slice(0)
+    })
+
+    var infowindow = new google.maps.InfoWindow()
+
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.setContent(this.content[0])
+      infowindow.open(map, this)
+      renderDetails(this.content)
+    })
+  }
+}
