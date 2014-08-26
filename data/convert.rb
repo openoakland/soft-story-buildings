@@ -47,14 +47,15 @@ class Converter
     return JSON.generate({:keys => Keys, :rows => sheet.drop(5).map{|r| extract_row(r)}})
   end
 
+  # Get geocoords from the address using Geocoder
+  # addr: string
   def self.extract_geolocation(addr)
     location = Geocoder.search(addr).first
     if location && location.data && location.data['GeoObject']
-      latlng = location.data['GeoObject']['Point']['pos'].split(' ')
+      return location.data['GeoObject']['Point']['pos'].split(' ')
     else
-      latlng = ['','']
+      return ['','']
     end
-    return latlng 
   end
 
   # Extract the property address
