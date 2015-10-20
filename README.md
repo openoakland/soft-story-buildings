@@ -18,6 +18,7 @@ To get the alpha version of the web site running locally, do the following:
 - Clone the repo and `cd` into the directory
 - Install Bower if you don't already have it: `npm install -g bower`
 - Run `bower install`
+- Install Compass if you don't already have it: `gem update --system && sudo gem install compass`
 - Run `compass watch`
 - Run `python -m SimpleHTTPServer` to serve up the site
 - Visit [http://localhost:8000/](http://localhost:8000/) where the site will be!
